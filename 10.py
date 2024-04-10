@@ -1,9 +1,9 @@
-amount = 0
-cels = float(input())
-while cels != 0:
-    last_cels = cels
-    cels = float(input())
-    if last_cels > cels:
-        amount += 1
+n = int(input())
 
-print(amount - 1)
+for i_1 in range(1, n):
+    summa = 0
+    for i_2 in range(1, i_1):
+        if i_1 % i_2 == 0:
+            summa += i_2
+    if summa == i_1:
+        print(i_1)

@@ -1,6 +1,4 @@
-n = int(input())
-a = 1
+a = int(input())
 
-while a <= n:
-    print(a)
-    a *= 2
+for i in range(1, a + 1):
+    print(f"{(a - i) * (' ')}{i * ('*')}")

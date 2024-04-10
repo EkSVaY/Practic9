@@ -1,9 +1,8 @@
-n, k, r = map(int, input().split(" "))
-process = 1 + (k / 100)
-days = 1
-
-while n <= r:
-    n *= process
-    days += 1
-
-print(days)
+a = int(input())
+for a in range(2, a + 1):
+    k = 0
+    for i in range(2, a):
+        if a % i == 0:
+            k += 1
+    if k == 0:
+        print(a, k)

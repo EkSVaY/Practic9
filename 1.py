@@ -1,8 +1,8 @@
-amount = 0
+a = 0
+b = 0
+while b != -1:
+    b = int(input())
+    if b > a:
+        a = b
 
-for i in range(100, 999 + 1):
-    if i % 17 == 0:
-        amount += 1
-        print(i, end=" ")
-
-print(f"\n{amount}")
+print(a)

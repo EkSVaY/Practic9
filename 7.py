@@ -1,11 +1,5 @@
-answer = False
-n = int(input())
-while n > 1:
-    n /= 2
-    if n == 1:
-        answer = True
+s = input("Введите число: ")
+while not s.isdigit():
+    s = input("Ошибка. Попробуйте ещё раз. Введите число: ")
 
-if answer:
-    print("Верно")
-else:
-    print("Неверно")
+print(f"Введено целое число: {s}")

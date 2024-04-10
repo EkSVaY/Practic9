@@ -1,8 +1,12 @@
-import math
+salary_a = 0
+sal = 0
+population = 0
+exit_zic = True
+while exit_zic:
+    sal = int(input())
+    if sal == 0:
+        exit_zic = False
+    population += 1
+    salary_a += sal
 
-while True:
-    num = int(input("Введите число: "))
-    if math.sqrt(num) % 1 == 0:
-        print("Поздравляю! Чисто является полным квадратом!")
-        break
-    print("Число не ялвяется полным квадратом!")
+print(salary_a/(population-1))
