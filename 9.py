@@ -1,8 +1,10 @@
-a = int(input())
-for a in range(2, a + 1):
-    k = 0
-    for i in range(2, a):
-        if a % i == 0:
-            k += 1
-    if k == 0:
-        print(a, k)
+n = int(input())
+summa = 0
+for a in range(n + 1):
+    for b in range(n + 1):
+        if a == b:
+            summa += 2 * (a + b)
+        else:
+            summa += a + b
+
+print(summa // 2)

@@ -1,8 +1,5 @@
-a = 0
-b = 0
-while b != -1:
-    b = int(input())
-    if b > a:
-        a = b
+n, d, r = map(int, input().split())
 
-print(a)
+l = (2 * r) * n + (2 * d * n) - (2 * d * (n - 1))
+
+print(l)

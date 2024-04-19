@@ -1,10 +1,9 @@
-a = 0
-b = 0
-f = 0
-while b != -1:
-    b = int(input())
-    f += 1
-    if b > a:
-        a = b
+import math
 
-print(f-1)
+a = int(input())
+if a > 2:
+    while a > 2:
+        a = math.sqrt(a)
+        print(round(a, 3))
+else:
+    print("Ошибка")

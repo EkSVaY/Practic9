@@ -1,12 +1,8 @@
-salary_a = 0
-sal = 0
-population = 0
-exit_zic = True
-while exit_zic:
-    sal = int(input())
-    if sal == 0:
-        exit_zic = False
-    population += 1
-    salary_a += sal
+n = int(input())
+i_2 = 1
+for i_1 in range(2, (n // 2) + 1):
+    if n % i_1 == 0:
+       if i_1 >= i_2:
+           i_2 = i_1
 
-print(salary_a/(population-1))
+print(int(n / i_2))
